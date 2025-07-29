@@ -1,140 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Howard Stone - Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
+
     header {
-      background-color: #003366;
+      background-color: purple;
       color: white;
-      padding: 20px 0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-right: 20px;
+    }
+
     main {
+      padding: 2rem;
       max-width: 900px;
-      margin: 20px auto;
-      padding: 0 20px;
+      margin: auto;
     }
+
     h1 {
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
     }
+
     h2 {
       border-bottom: 2px solid #003366;
-      padding-bottom: 5px;
-      margin-top: 30px;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
     }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
+
     a {
       color: #003366;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .icon {
-      margin-right: 6px;
+
+    em {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .cert-grid div {
+      background: #fff;
+      border-left: 4px solid purple;
+      padding: 10px 15px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 650px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
-<body>
-  <header style="background-color: purple; color: white; padding: 20px; display: flex; align-items: center; justify-content: center; text-align: center;">
-  <img src="file_00000000c8b461f88af406aff5429ea4.png" alt="Howard Stone AI Portrait" style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid white; margin-right: 20px;">
-  <div>
-    <h1 style="margin: 0;">Howard Stone</h1>
-    <p style="margin: 5px 0 0;">IT Pro | IT Project Manager | Innovator</p>
-  </div>
-</header>
 
+<body>
+  <header>
+    <img src="file_00000000c8b461f88af406aff5429ea4.png" alt="Howard Stone AI Portrait">
+    <div>
+      <h1 style="margin: 0;">Howard Stone</h1>
+      <p style="margin: 5px 0 0;">IT Pro | IT Project Manager | Innovator</p>
+    </div>
+  </header>
 
   <main>
     <section>
       <h2>About Me</h2>
-      <p>Welcome to my portfolio! I'm an experienced IT professional an IT Project Manager with over 20 years of expierence and with a passion for solving real-world problems through technology and leadership.</p>
-    </section>
-<section>
-  <h2>Certifications</h2>
-  <div class="cert-grid">
-    <div>Google Project Management Professional Certificate<br><em>Coursera, Mar 2025</em></div>
-    <div>Google IT Support Professional Certificate<br><em>Coursera, Apr 2025</em></div>
-    <div>Project Management Essentials<br><em>Coursera, Mar 2025</em></div>
-    <div>IT Fundamentals for Everyone<br><em>Coursera, Apr 2025</em></div>
-    <div>Generative AI Essentials<br><em>Coursera, Apr 2025</em></div>
-    <div>Generative AI for Project Managers Specialization<br><em>Coursera</em></div>
-    <div>Generative AI: Prompt Engineering<br><em>Coursera, Apr 2025</em></div>
-    <div>Introduction to Agile Development and Scrum<br><em>Coursera, Apr 2025</em></div>
-    <div>Project Management Job Search, Resume, and Interview Prep<br><em>Coursera, Apr 2025</em></div>
-    <div>Software Engineering Essentials<br><em>Coursera, Apr 2025</em></div>
-    <div>Artificial Intelligence Fundamentals<br><em>IBM SkillsBuild, Jul 2025</em></div>
-    <div>Customer Engagement Fundamentals<br><em>IBM SkillsBuild, Jul 2025</em></div>
-    <div>Project Management Fundamentals<br><em>IBM SkillsBuild, Jul 2025</em></div>
-    <div>Business Ethics<br><em>Sophia Learning, May 2025</em></div>
-    <div>Introduction to Ethics<br><em>Sophia Learning, May 2025</em></div>
-    <div>Google Professional Workspace Administrator<br><em>Google</em></div>
-    <div>Project Management and Planning<br><em>Johns Hopkins University</em></div>
-    <div>Project Management<br><em>University of Colorado Boulder</em></div>
-    <div>ChatGPT for Project Management<br><em>Vanderbilt University</em></div>
-    <div>Prompt Engineering for ChatGPT<br><em>Vanderbilt University</em></div>
-  </div>
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>VitalMate:</strong> A health-tracking app designed for seniors with chronic health conditions.</li>
-        <li><strong>DataNanny:</strong> A real-time database security monitor for small businesses.</li>
-        <li><strong>IT-253 InfoSec Plan:</strong> A comprehensive information security strategy for a mid-size e-commerce company.</li>
-        <li><strong>Python Text-Based Game:</strong> A terminal-based interactive game built with user input, logic branches, and loops.<br />
-          📄 <a href="TextBaseGame.py" download>Download Game (.py)</a>
-        </li>
-        <li><strong>ManCave Project (Modified):</strong> A simulated planning and stakeholder analysis exercise for a custom project scenario. Documents include stakeholder analysis, knowledge management, and project charter.<br />
-          <em>(Note: Names and content were modified to protect proprietary or confidential project details.)</em><br />
-          📄 <a href="Mancave charter.docx" download>Project Charter</a> | 
-          📄 <a href="Man Cave Stakeholder-Analysis.pptx" download>Stakeholder Slides</a> | 
-          📄 <a href="Knowledge Management Summary.docx" download>KM Summary</a> | 
-          📄 <a href="Bugs Mancave.xlsx" download>Bug Tracker</a>
-        </li>
-        <li><strong>AHI Project (Modified):</strong> A full Agile-based software project plan simulation including backlogs, status reporting, stakeholder registry, and more.<br />
-          <em>(Note: Names and content were modified to protect proprietary or confidential project details.)</em><br />
-          📄 <a href="Project Charter - AHI.pdf" download>Project Charter</a> |
-          📄 <a href="Project Status Report AHI.pdf" download>Status Report</a> |
-          📄 <a href="Project Close Out Report AHI.pdf" download>Close Out Report</a> |
-          📄 <a href="Product Backlog.pdf" download>Product Backlog</a> |
-          📄 <a href="Sprint Backlog Template AHI.pdf" download>Sprint Backlog</a> |
-          📄 <a href="Quality Management Plan AHI.pdf" download>Quality Plan</a> |
-          📄 <a href="Change Request form.pdf" download>Change Request</a> |
-          📄 <a href="AHI Risk Management.pdf" download>Risk Mgmt</a> |
-          📄 <a href="AHI WBS.pdf" download>WBS</a> |
-          📄 <a href="AHI RBS.pdf" download>RBS</a> |
-          📄 <a href="AHI Communication Plan.pdf" download>Communication Plan</a> |
-          📄 <a href="Stakeholder Register .pdf" download>Stakeholder Register</a> |
-          📄 <a href="User Story .pdf" download>User Story</a>
-        </li>
-      </ul>
+      <p>Welcome to my portfolio! I'm an experienced IT professional and project manager in training with a passion for solving real-world problems through technology and leadership.</p>
     </section>
 
     <section>
-      <h2>Downloads</h2>
-      <ul>
-        <li>📄 <a href="Howard Stone Project Manager Resume.pdf" download>View My Resume (PDF)</a></li>
-        <li><strong>PowerPoint Resume Presentation:</strong> This presentation showcases my ability to use PowerPoint effectively for clear and impactful communication.
-          <ul>
-            <li>📂 <a href="Resume presentation part 1.pptx" download>Download Part 1</a></li>
-            <li>📂 <a href="Resume presentation part 2.pptx" download>Download Part 2</a></li>
-            <li>📂 <a href="resume presentation part 2.5.pptx" download>Download Part 2.5</a></li>
-            <li>📂 <a href="Resume Presentation Part 3.pptx" download>Download Part 3</a></li>
-          </ul>
-        </li>
-      </ul>
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <div>Google Project Management Professional Certificate<br><em>Coursera, Mar 2025</em></div>
+        <div>Google IT Support Professional Certificate<br><em>Coursera, Apr 2025</em></div>
+        <div>Project Management Essentials<br><em>Coursera, Mar 2025</em></div>
+        <div>IT Fundamentals for Everyone<br><em>Coursera, Apr 2025</em></div>
+        <div>Generative AI Essentials<br><em>Coursera, Apr 2025</em></div>
+        <div>Generative AI for Project Managers Specialization<br><em>Coursera</em></div>
+        <div>Generative AI: Prompt Engineering<br><em>Coursera, Apr 2025</em></div>
+        <div>Introduction to Agile Development and Scrum<br><em>Coursera, Apr 2025</em></div>
+        <div>Project Management Job Search, Resume, and Interview Prep<br><em>Coursera, Apr 2025</em></div>
+        <div>Software Engineering Essentials<br><em>Coursera, Apr 2025</em></div>
+        <div>Artificial Intelligence Fundamentals<br><em>IBM SkillsBuild, Jul 2025</em></div>
+        <div>Customer Engagement Fundamentals<br><em>IBM SkillsBuild, Jul 2025</em></div>
+        <div>Project Management Fundamentals<br><em>IBM SkillsBuild, Jul 2025</em></div>
+        <div>Business Ethics<br><em>Sophia Learning, May 2025</em></div>
+        <div>Introduction to Ethics<br><em>Sophia Learning, May 2025</em></div>
+        <div>Google Professional Workspace Administrator<br><em>Google</em></div>
+        <div>Project Management and Planning<br><em>Johns Hopkins University</em></div>
+        <div>Project Management<br><em>University of Colorado Boulder</em></div>
+        <div>ChatGPT for Project Management: Insight, Planning, & Success<br><em>Vanderbilt University</em></div>
+        <div>Prompt Engineering for ChatGPT<br><em>Vanderbilt University</em></div>
+      </div>
     </section>
   </main>
 </body>
+
 </html>
